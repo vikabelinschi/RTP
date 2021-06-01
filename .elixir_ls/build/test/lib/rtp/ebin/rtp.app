@@ -1,0 +1,10 @@
+{application,rtp,
+             [{applications,[kernel,stdlib,elixir,logger,eventsource_ex,
+                             poison]},
+              {description,"rtp"},
+              {modules,['Elixir.Checker','Elixir.Connection',
+                        'Elixir.DySupervisor','Elixir.RTP','Elixir.Router',
+                        'Elixir.Sentiments','Elixir.Worker']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.RTP',[]}}]}.
