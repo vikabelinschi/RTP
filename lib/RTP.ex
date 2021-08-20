@@ -6,20 +6,12 @@ defmodule RTP do
   def start(_type, _args) do
     children = [
       %{
-        id: Worker,
-        start: {Worker, :start_link, [""]}
-      },
-      %{
-        id: DySupervisor,
-        start: {DySupervisor, :start_link, [""]}
-      },
-      %{
         id: Router,
-        start: {Router, :start_link, [""]}
+        start: {Router, :start_link, []}
       },
       %{
-        id: Connection,
-       start: {Connection, :init, []}
+        id: Connectors,
+       start: {Connectors, :init, []}
      }
     ]
 

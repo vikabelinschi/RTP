@@ -2,7 +2,7 @@
              [{applications,[kernel,stdlib,elixir,logger,eventsource_ex,
                              poison]},
               {description,"rtp"},
-              {modules,['Elixir.Checker','Elixir.Connection',
+              {modules,['Elixir.Connectors','Elixir.Decoder',
                         'Elixir.DySupervisor','Elixir.RTP','Elixir.Router',
                         'Elixir.Sentiments','Elixir.Worker']},
               {registered,[]},

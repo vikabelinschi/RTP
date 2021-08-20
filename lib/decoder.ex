@@ -1,4 +1,4 @@
-defmodule Checker do
+defmodule Decoder do
   use GenServer
 
 

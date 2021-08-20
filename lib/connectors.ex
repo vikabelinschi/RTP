@@ -1,4 +1,4 @@
-defmodule Connection do
+defmodule Connectors do
 
   def init() do
     pid = spawn_link(__MODULE__, :get_tweet, [])
